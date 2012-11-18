@@ -1,0 +1,38 @@
+div.statusblock-Statuscontainer {
+  text-align: center;
+}
+
+div.statusblock-statusclosed {
+  color: white;
+  background: red;
+}
+
+div.statusblock-statusopen {
+  color: white;
+  background: green;
+}
+
+div.statusblock-statusinit {
+  color: black;
+  background: yellow;
+}
+
+div.statusblock-statuserror {
+  color: white;
+  background: black;
+}
+
+div.statusblock-Status {
+  margin-left: auto;
+  margin-right: auto;
+  height: 256px;
+  width: 256px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 200%;
+}
+
+div.statusblock-Status p {
+  padding-top: 40%;
+  height: 100%;
+}

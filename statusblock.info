@@ -1,0 +1,13 @@
+;$Id$
+
+name = StatusBlock
+description = A block showing the current status (open/closed) of the hackspace
+package = Status View
+core = 7.x
+files[] = statusblock.module
+stylesheets[all][] = statusblock.css
+scripts[] = eventsource.js
+scripts[] = status.js
+
+;dependencies[]
+;php = 5.2
