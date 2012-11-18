@@ -17,24 +17,24 @@ function statusblock_block_info() {
 }
 
 function statusblock_block_view($block_name = '') {
-  if ($block_name == 'StatusBlock') {
+  if ($block_name == 'statusblock') {
     $block = array ();
     
-    $block['subject'] = 'Status des Mainframe';
+    $block['subject'] = '/* Mainframe status */';
     $block['content'] = '
-    <div class="statusblock-Statuscontainer">
-	<a href="http://status.kreativitaet-trifft-technik.de">
-      <div class="statusblock-Status statusblock-statusinit">
-        <p>Pr&uuml;fe</p>
-      </div></a>
-      <div class="statusblock-openings">
-	<strong>Regul&auml;re &Ouml;ffnungszeiten</strong>
-        <table>
-          <tr><td>Mo-Fr</td><td>18-23 Uhr</td></tr>
-          <tr><td>Sa-So</td><td>15-23:42 Uhr</td></tr>
-        </table>
-      </div>
-    </div>';
+      <div class="statusblock-Statuscontainer">
+  	<a href="http://status.kreativitaet-trifft-technik.de">
+        <div class="statusblock-Status statusblock-statusinit">
+          <p>Pr&uuml;fe</p>
+        </div></a>
+        <div class="statusblock-openings">
+  	<strong>Regul&auml;re &Ouml;ffnungszeiten</strong>
+          <table>
+            <tr><td>Mo-Fr</td><td>18-23 Uhr</td></tr>
+            <tr><td>Sa-So</td><td>15-23:42 Uhr</td></tr>
+          </table>
+        </div>
+      </div>';
 
     return $block; 
   }
