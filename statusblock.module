@@ -9,7 +9,7 @@ function StatusBlock_block_info() {
   $blocks = array();
   
   $blocks['StatusBlock'] = array(
-    'info' => t('A display of the current status of the Space'),
+    'info' => t('Statusblock');
     'cache' => DRUPAL_NO_CACHE
     );
     
