@@ -2,7 +2,7 @@
 
 name = StatusBlock
 description = A block showing the current status (open/closed) of the hackspace
-package = Status View
+package = Status Display
 core = 7.x
 files[] = statusblock.module
 stylesheets[all][] = statusblock.css
