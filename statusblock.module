@@ -20,7 +20,7 @@ function statusblock_block_view($block_name = '') {
   if ($block_name == 'statusblock') {
     $block = array ();
     
-    $block['subject'] = '/* Mainframe status */';
+    $block['subject'] = 'Mainframe status';
     $block['content'] = '
       <div class="statusblock-Statuscontainer">
   	<a href="http://status.kreativitaet-trifft-technik.de">
