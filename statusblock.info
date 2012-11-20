@@ -1,5 +1,3 @@
-;$Id$
-
 name = StatusBlock
 description = A block showing the current status (open/closed) of the hackspace
 package = Status Display

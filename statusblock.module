@@ -1,5 +1,4 @@
 <?php
-// ;$Id$
 function statusblock_help ($path, $args) {
 	 if ($path == 'admin/help#StatusBlock') {
 	    return t('Module to present the current status of the hackspace in a block');
