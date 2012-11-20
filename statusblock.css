@@ -30,9 +30,10 @@ div.statusblock-Status {
   border-radius: 15px;
   text-align: center;
   font-size: 200%;
+  display: table;
 }
 
 div.statusblock-Status p {
-  padding-top: 40%;
-  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }
