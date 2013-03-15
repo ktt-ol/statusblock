@@ -1,6 +1,6 @@
 (function($) {
   function onDomReady() {
-    var source = new EventSource('http://status.kreativitaet-trifft-technik.de/status-stream?ff=1&w=1&listeners=1');
+    var source = new EventSource('//status.kreativitaet-trifft-technik.de/status-stream?ff=1&w=1&listeners=1');
     var lastkeepalive = +new Date();
     source.onopen = function() {
       $('div.statusblock-Status').removeClass("statusblock-statusclosed");

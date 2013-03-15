@@ -23,7 +23,7 @@ function statusblock_block_view($block_name = '') {
     $block['subject'] = 'Status des Mainframe';
     $block['content'] = '
     <div class="statusblock-Statuscontainer">
-	<a href="http://status.kreativitaet-trifft-technik.de">
+	<a href="//status.kreativitaet-trifft-technik.de">
       <div class="statusblock-Status statusblock-statusinit">
         <p>Pr&uuml;fe</p>
       </div></a>
