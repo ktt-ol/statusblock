@@ -1,6 +1,6 @@
 (function($) {
   function onDomReady() {
-    var source = new EventSource('//status.kreativitaet-trifft-technik.de/status-stream?ff=1&w=1&listeners=1');
+    var source = new EventSource('//status.kreativitaet-trifft-technik.de/api/statusStream?spaceOpen=1&spaceDevices=1');
     var lastkeepalive = +new Date();
     source.onopen = function() {
       $('div.statusblock-Status').removeClass("statusblock-statusclosed");
@@ -17,16 +17,17 @@
 		  $('div.statusblock-Status').html("<p>Crashed</p>");
 	  } */
 	  source.addEventListener('status', function(e) {
-	    var state = jQuery.parseJSON(e.data);
-		  switch (state.open) {
-		    case false:
+	    var data = jQuery.parseJSON(e.data);
+		  switch (data.state) {
+		    case 'off':
+        case 'closing' :
                 $('div.statusblock-Status').addClass("statusblock-statusclosed");
 		            $('div.statusblock-Status').removeClass("statusblock-statusopen");
 		            $('div.statusblock-Status').removeClass("statusblock-statusinit");
 		            $('div.statusblock-Status').removeClass("statusblock-statuserror");
                 $('div.statusblock-Status').html("<p>Runtergefahren</p>");
 			    break;
-		    case true:
+		    case 'on':
 		            $('div.statusblock-Status').addClass("statusblock-statusopen");
 		            $('div.statusblock-Status').removeClass("statusblock-statusinit");
 		            $('div.statusblock-Status').removeClass("statusblock-statuserror");
