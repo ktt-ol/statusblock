@@ -6,7 +6,7 @@
       $('div.statusblock-Status').removeClass("statusblock-statusclosed");
       $('div.statusblock-Status').removeClass("statusblock-statusinit");
       $('div.statusblock-Status').removeClass("statusblock-statuserror");
-      $('div.statusblock-Status').addClass("statusblocl-statusopen");
+      $('div.statusblock-Status').addClass("statusblock-statusopen");
       $('div.statusblock-Status').html("<p>Hochgefahren</p>");
     }
 /*	  source.onerror = function() {
