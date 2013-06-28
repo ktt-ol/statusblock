@@ -9,7 +9,7 @@ function statusblock_block_info() {
   $blocks = array();
   
   $blocks['statusblock'] = array(
-    'info' => t('Statusblock');
+    'info' => t('Statusblock'),
     'cache' => DRUPAL_NO_CACHE
     );
     
