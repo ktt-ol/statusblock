@@ -16,7 +16,7 @@
 		  $('div.statusblock-Status').addClass("statusblock-statuserror");
 		  $('div.statusblock-Status').html("<p>Crashed</p>");
 	  } */
-	  source.addEventListener('status', function(e) {
+	  source.addEventListener('spaceOpen', function(e) {
 	    var data = jQuery.parseJSON(e.data);
 		  switch (data.state) {
 		    case 'off':
